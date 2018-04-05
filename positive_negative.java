@@ -11,13 +11,19 @@ public class positive_negative {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int num = Integer.parseInt(br.readLine());
-        if (num == 0) {
-            System.out.println("Zero");
-        } else if (num > 0) {
-            System.out.println("Positive");
-        } else {
-            System.out.println("Negative");
+        String str = br.readLine();
+        try {
+            int num = Integer.parseInt(str);
+            if (num == 0) {
+                System.out.println("Zero");
+            } else if (num > 0) {
+                System.out.println("Positive");
+            } else {
+                System.out.println("Negative");
+            }
+
+        } catch (Exception e) {
+            System.out.println("Invalid");
         }
     }
 }
