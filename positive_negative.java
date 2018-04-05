@@ -13,11 +13,11 @@ public class positive_negative {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         if (num == 0) {
-            System.out.println("zero");
+            System.out.println("Zero");
         } else if (num > 0) {
-            System.out.println("positive");
+            System.out.println("Positive");
         } else {
-            System.out.println("negative");
+            System.out.println("Negative");
         }
     }
 }
